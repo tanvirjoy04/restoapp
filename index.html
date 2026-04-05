@@ -10,85 +10,86 @@
 <body>
   <div id="banner">
     Бесплатная доставка от 1 000 ₽
-  <img src="./icons/x-mark.svg">
+  <img src="./icons/x-mark.svg" alt="крестик">
   </div>
 
 <header>
   <div class="container">
-  <img src="./images/Logo.svg" alt="Resto App Logo" class="logo">
+  <img src="./images/logo.svg" alt="Логотип приложения «Ресто»" class="logo">
           
   <nav>
-    <a href="#">Меню</a>
-    <a href="#">Акции</a>
-    <a href="#">О нас</a>
-    <a href="#">События</a>
-    <a href="#">Зоны доставки</a>
+    <a href="./index.html">Меню</a>
+    <a href="./index.html">Акции</a>
+    <a href="./index.html">О нас</a>
+    <a href="./index.html">События</a>
+    <a href="./index.html">Зоны доставки</a>
   </nav>
 
   <div id="call">
     <a href="tel: +0 (123) 456 78-90" id="number">+0 (123) 456 78-90</a>
-    <a href="#" id="time">Прием заказов с 10:00 до 22:40</a>
+    <a href="./index.html" id="time">Прием заказов с 10:00 до 22:40</a>
   </div>
 
   <section class="icon">
-    <img id='user' src="./icons/user.svg">  
-    <img id='basket' src="./icons/basket.svg">  
+    <img id='user' src="./icons/user.svg" alt="пользователь">  
+    <img id='basket' src="./icons/basket.svg" alt="корзина">  
   </section>
   </div>
 </header>
   
 
 <main>
+  <h1 class="visually-hidden">Resto App Food Delivery</h1>
   <section id="menu"> 
-  <h1 class="title">Меню</h1>
-  <nav>
-    <a href="./index.html">
-      <img src="./images/image_01.webp" alt="Pizza">
-      <p>Пицца</p></a>
+  <h2 class="title">Меню</h2>
+  <ul>
+    <li><a href="./index.html">
+      <img src="./images/Пицца.webp" alt="Пицца" width="512" height="512">
+      <p>Пицца</p></a></li>
       
-    <a class='col-two' href="./index.html">
-      <img src="./images/image_02.webp" alt="Soups">
-      <p>Супы</p></a>
+    <li><a class="col-two" href="./index.html">
+      <img src="./images/Супы.webp" alt="Супы" width="512" height="512">
+      <p>Супы</p></a></li>
 
-    <a class="col-three" href="./index.html">
-      <img src="./images/image_03.webp" alt="Hot dishes">
-        <p>Горячие блюда</p></a>
+    <li><a class="col-three" href="./index.html">
+      <img src="./images/Горячие-блюда.webp" alt="Горячие блюда" width="512" height="512">
+        <p>Горячие блюда</p></a></li>
 
-    <a href="./index.html">
-      <img src="./images/image_04.webp" alt="Salads">
-        <p>Салаты</p></a>
-    </nav>    
+    <li><a href="./index.html">
+      <img src="./images/Салаты.webp" alt="Салаты" width="512" height="512">
+        <p>Салаты</p></a></li>
+    </ul>    
   </section>
 
   <section id="new-items">
     <h2 class="title">Новинки</h2>
   <ul>  
     <li><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_01.webp" alt="Chinese Egg Soup">
-      <img class='status' src="./icons/vegetarian.svg" alt="status">
+      <img class="cards-img" src="./images/new-items/Китайский-яичный-суп.webp" alt="Китайский яичный суп" width="512" height="512">
+      <img class='badge' src="./badge/vegetarian.svg" alt="Эмблема">
       <h3>Китайский яичный суп</h3>
       <p>Традиционный китайский суп с яйцом и томатами черри</p>
     </a>
     <button>350 ₽</button></li>
       
     <li class="col-two"><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_02.webp" alt="Paella">
-      <img class='status' src="./icons/vegetarian.svg" alt="status">
+      <img class="cards-img" src="./images/new-items/Паэлья.webp" alt="Паэлья" width="512" height="512">
+      <img class="badge" src="./badge/vegetarian.svg" alt="Эмблема">
       <h3>Паэлья</h3>
       <p>Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
     </a>
     <button>660 ₽</button></li>
       
     <li class="col-three"><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_03.webp" alt="Beef Burgundy">
+      <img class="cards-img" src="./images/new-items/Биф-Бургеньон.webp" alt="Биф Бургеньон" width="512" height="512">
       <h3>Биф Бургеньон</h3>
       <p>Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
     </a>
     <button>630 ₽</button></li>
       
     <li><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_04.webp" alt="Broken cucumbers">
-      <img class='status' src="./icons/vegetarian.svg" alt="status">
+      <img class="cards-img" src="./images/new-items/Битые-огурцы.webp" alt="Битые огурцы" width="512" height="512">
+      <img class="badge" src="./badge/vegetarian.svg" alt="Эмблема">
       <h3>Битые огурцы</h3>
       <p>Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
     </a>
@@ -101,31 +102,31 @@
   <h2 class="title">Популярное</h2>
   <ul>  
     <li><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_5.webp" alt="Pepperoni">
+      <img class="cards-img" src="./images/new-items/Пепперони.webp" alt="Пепперони" width="512" height="512">
       <h3>Пепперони</h3>
       <p>Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
     </a>
     <button>660 ₽</button></li>
       
     <li class="col-two"><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_6.webp" alt="Gorgonzola pear">
-      <img class='status' src="./icons/vegetarian.svg" alt="status">
+      <img class="cards-img" src="./images/new-items/Груша-Горгонзола.webp" alt="Груша Горгонзола" width="512" height="512">
+      <img class="badge" src="./badge/vegetarian.svg" alt="Эмблема">
       <h3>Груша Горгонзола</h3>
       <p>Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
     </a>
     <button>780 ₽</button></li>
       
     <li class="col-three"><a href="./index.html">
-      <img class="cards-img" src="./images/image_02.webp" alt="Pho">
+      <img class="cards-img" src="./images/Супы.webp" alt="Фо Бо" width="512" height="512">
       <h3>Фо Бо</h3>
       <p>Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
     </a>
     <button>490 ₽</button></li>
       
     <li><a href="./index.html">
-      <img class="cards-img" src="./images/new-items/image_7.webp" alt="Tom Yum with seafood">
-      <img class='status-front' src="./icons/sharp.svg" alt="status">
-      <img class='status' src="./icons/seafood.svg" alt="status">
+      <img class="cards-img" src="./images/new-items/Том-Ям-с-морепродуктами.webp" alt="Том Ям с морепродуктами" width="512" height="512">
+      <img class="badge-front" src="./badge/sharp.svg" alt="Эмблема">
+      <img class="badge" src="./badge/seafood.svg" alt="Эмблема">
       <h3>Том Ям с морепродуктами</h3>
       <p>Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</p>
     </a>
@@ -139,16 +140,18 @@
   <ul>
     <li class="list-one">
     <a href="./index.html">
-      <img src="./images/promotion/promotion-1.webp" alt="Promotion 1">
+      <img src="./images/promotion/promotion-1.webp" alt="Акция 1" width="1600" height="2106">
       <span class="discount">Скидка 10%</span>
-      <p>Статус «Platina»<br>привилегированным клиентам</p></a>
+      <p class="firstLine">Статус «Platina»</p>
+      <p class="secondLine">привилегированным клиентам</p></a>
     </li>
       
     <li>
     <a href="./index.html">
-      <img src="./images/promotion/promotion-2.webp" alt="Promotion 2">
+      <img src="./images/promotion/promotion-2.webp" alt="Акция 2" width="1600" height="1064">
       <span class="discount">Скидка 5%</span>
-      <p>Скидка на все покупки<br>при регистрации</p></a>
+      <p class="firstLine">Скидка на все покупки</p>
+      <p class="secondLine">при регистрации</p></a>
     </li>
   </ul>
   </section>
@@ -158,7 +161,7 @@
   <ul>
     <li class="list-one">
     <a href="./index.html">
-      <img src="./images/promotion/events_01.webp" alt="Event 1">
+      <img src="./images/promotion/events_01.webp" alt="События 1" width="1600" height="1064">
       <span class="event-date">27 января</span>
       <span class="event-time">В 21:00</span>
       <span class="soon">Скоро</span>
@@ -167,7 +170,7 @@
       
     <li>
     <a href="./index.html">
-      <img src="./images/promotion/events_02.webp" alt="Event 2">
+      <img src="./images/promotion/events_02.webp" alt="События 2" width="1600" height="1064">
       <span class="event-date">21 января</span>
       <span class="event-discount">Скидка 20%</span>
       <span id="complete">Завершено</span>
@@ -182,7 +185,7 @@
   <ul>
     <li class="list-one">
     <a href="./index.html">
-      <img src="./images/promotion/institution_01.webp" alt="Institution 1">
+      <img src="./images/promotion/institution_01.webp" alt="Наши заведения 1" width="1600" height="897">
       <span class="time-left">Открыт еще 1 ч 20 мин</span>
       <span class="open-hours">с 10:00 до 23:00</span>
       <span class="soon">Открыт</span>
@@ -191,7 +194,7 @@
       
     <li>
     <a href="./index.html">
-      <img src="./images/promotion/institution_02.webp" alt="Institution 2">
+      <img src="./images/promotion/institution_02.webp" alt="Наши заведения 2" width="1600" height="900">
       <span class="time-left">Открыт еще 1 ч 20 мин</span>
       <span class="open-hours">с 10:00 до 23:00</span>
       <span class="soon">Открыт</span>
