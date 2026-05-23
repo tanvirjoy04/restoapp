@@ -1,8 +1,5 @@
 @font-face {
   font-family: "Inter";
-  /* Tell the browser this file supports ALL weights from 100 to 900 */
-  font-weight: 100 900;
-  font-style: normal;
   font-display: swap;
   src: url("./fonts/Inter-VariableFont_opsz,wght.ttf")
     format("truetype-variations");
@@ -36,6 +33,33 @@ main #menu,
   box-sizing: border-box;
   padding: 0 64px;
 }
+#promotion img,
+#events img,
+#institution img{
+  padding-bottom: 0.5px;
+}
+
+#popular .col-three p{
+  letter-spacing: 0.004em;
+}
+.popular-list-four h3{
+  letter-spacing: 0.002em;
+}
+
+
+#popular .title{
+  margin-bottom: 31px;
+}
+#promotion .title{
+  margin-bottom: 31px;
+}
+#events .title{
+  margin-bottom: 31px;
+}
+#menu .title{
+  margin-bottom: 31.5px;
+}
+
 
 main ul {
   display: flex;
@@ -68,38 +92,78 @@ main #menu a::before,
   left: 0;
   width: 100%;
   height: 50%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-  border-radius: 14px;
+  background: linear-gradient(to top, transparent 1px, rgba(0, 0, 0, 0.5) 1px, transparent);
+  border-radius: 20px;
+}
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  margin: 32px 0;
+  margin-left:0.03rem;
+  margin-top: 32.5px;
+  margin-bottom: 31.5px;
+}
+
+#institution li{
+  margin-top: -1px;
+}
+#institution .title{
+  padding-top: 2px;
+}
+#events .title{
+  padding-top: 1px;
+  letter-spacing: 0.04em;
+}
+footer{
+  margin-top: -1px;
+  padding-top: 0px;
+}
+
+.footer-row-one .time{
+  padding-top: 2px;
+}
+
+.footer-row-two{
+  margin-top: -2.5px;
+}
+/* .store{
+  margin-top:2.5px;
+}
+#apple{
+  margin-right: 4px;
+} */
+.footer-row-two .store-icon svg{
+  margin-top:2.5px;
+  margin-left : 3.8px;
 }
 
 main #menu p {
   position: absolute;
-  bottom: -5px;
-  left: 5.5%;
+  bottom: -4.5px;
+  left: 16px;
+  letter-spacing:0.5px;
   color: white;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
 }
+.col-three p{
+  letter-spacing: 0.02em;
+}
 
 .col-two {
   margin: 0 32px;
+
 }
 .col-three {
   margin-right: 32px;
 }
 
-.title {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 4%;
-  margin: 32px 0;
-}
-
 header img {
-  padding-top: 28.61px;
-  padding-bottom: 28.94px;
+  padding-top: 1.788rem;
+  padding-bottom: 1.809rem;
 }
 header nav,
 footer nav {
@@ -107,26 +171,52 @@ footer nav {
   align-items: center;
   gap: 24px;
 }
+header nav{
+  margin-top:-3px;
+  margin-left:130px;
+  margin-right: 130px;
+}
+header nav a,
+footer nav a{
+  letter-spacing: 0.01em;
+}
+footer nav {
+  gap: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 149px;
+  margin-bottom: 0.01em;
+}
 .call {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  font-style: normal;
 }
 .number {
+  display: block;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  text-align: right;
   color: #555555;
-  font-weight: 600;
+  text-align: right;
   text-decoration: none;
+  margin-top: 20.5px;
+  letter-spacing: 0.015rem;
+  margin-right: -1.5px;
+  font-feature-settings: "case" on; 
 }
+
 .time {
+  display: block;
   color: #555555;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-decoration: none;
+  margin-right: -2px;
+  margin-top: -0.5px;
 }
+
 header nav a,
 footer nav a {
   color: #555555;
@@ -146,7 +236,7 @@ body {
 main img,
 li {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 14px;
 }
 
 #banner {
@@ -157,8 +247,13 @@ li {
   font-size: 18px;
   line-height: 24px;
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
+#banner span{
+  letter-spacing:0.01rem;
+  margin-right: -5px;
+}
+
 #banner.hidden {
   opacity: 0;
   visibility: hidden;
@@ -171,12 +266,18 @@ li {
 .icon {
   margin: auto 0;
 }
+header .icon {
+  display: flex;
+  padding-bottom: 5px;
+  margin-left: 17px;
+}
+
 #user svg {
   margin-top: 1px;
-  padding: 12px 17px;
+  padding: 12px 18px;
   border: 2px solid;
-  border-radius: 15px;
-  margin-right: 5px;
+  border-radius: 16px;
+  margin-right: 4px;
 }
 #basket svg {
   padding: 0;
@@ -184,20 +285,17 @@ li {
   padding-left: 12px;
   margin-bottom: 4px;
 }
-.call {
-  margin-left: 115px;
-}
+
 header .logo {
-  margin-right: 115px;
+  padding-top: 0.03125rem;
 }
 
 #new-items p,
 #popular p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* Limits to 2 lines */
-  overflow: hidden; /* Hides the rest */
-  text-overflow: ellipsis; /* Adds "..." */
+  -webkit-line-clamp: 2; /* Limits to 2 lines, adds '...' */
+  overflow: hidden;
 }
 ul {
   list-style-type: none;
@@ -221,18 +319,43 @@ button {
   line-height: 24px;
   text-align: center;
 }
+#banner button:hover,
+header button:hover,
+#events button:hover{
+  filter: invert(100%);
+}
+#new-items button:hover,
+#popular button:hover{
+  background-color: #E8E8E8;
+  color: #393939;
+}
+#promotion img,
+#events img{ 
+  object-fit: cover;
+}
 
 li h3 {
   color: #1c1c1c;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  padding-top: 1.5px;
+  letter-spacing:0.2px;
+  margin-bottom: 17px;
+}
+#new-items-header-first{
+  letter-spacing:0.05px;
 }
 li p {
   color: #727272;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.005em;
+}
+#new-items-para-three{
+  letter-spacing: 0.005em;
+
 }
 
 main #menu,
@@ -243,6 +366,7 @@ main #menu,
 #institution ul {
   margin-bottom: 29px;
 }
+
 main {
   padding-bottom: 35px;
 }
@@ -250,14 +374,14 @@ main {
 .badge {
   position: absolute;
   width: 12%;
-  top: 1.6%;
+  top: 1.9%;
   right: 2.7%;
   border-radius: 8px;
 }
 .badge-front {
   position: absolute;
   width: 12%;
-  top: 1.6%;
+  top: 1.8%;
   right: 17%;
   border-radius: 8px;
 }
@@ -298,32 +422,42 @@ li p {
   padding: 8px;
   border-radius: 8px;
 }
-
-/* Group A: Top-Left items */
 .discount,
 .event-date,
 .time-left {
-  top: 9%;
+  top: 32px;
   left: 5%;
   color: white;
   background-color: #00000099;
 }
+.time-left{
+  left:32px;
+  letter-spacing: 0.01em;
+}
 
-/* Group B: Offset Top-Left items */
+
 .event-time,
 .event-discount {
-  top: 8.5%;
-  left: 19.6%;
+  top: 32px;
+  left: 126px;
   color: white;
   background-color: #00000099;
 }
+.event-discount {
+  left: 124px;
+}
+
 
 /* Group C: Top-Right item */
 .soon {
-  top: 9%;
+  top: 32px;
   right: 5%;
   color: #1c1c1c;
   background-color: #fedd2c;
+}
+#institution .soon{
+  right: 32px;
+  letter-spacing: 0.03em;
 }
 
 #complete {
@@ -334,16 +468,19 @@ li p {
 }
 
 .open-hours {
-  top: 9%;
-  left: 34%;
+  top: 32px;
+  left: 218px;
   color: white;
   background-color: #00000099;
+  letter-spacing: 0.005em;
 }
 
 #events button {
   color: #1c1c1c;
+  background-color: #FFFFFF;
   border: 2px solid #1c1c1c;
   margin-top: 8px;
+  padding-top: 15px;
 }
 
 #promotion p {
@@ -353,39 +490,49 @@ li p {
   margin-top: 3px;
 }
 
-main #promotion .secondLine {
+#promotion .firstLine,
+#promotion .secondLine {
   position: absolute;
-  bottom: -3%;
-  left: 5%;
+  bottom: 32px;
   color: white;
   font-weight: 600;
   font-size: 34px;
   line-height: 32px;
+  letter-spacing: -0.0025em;
+}
+#promotion .secondLine {
+  bottom: -8.5px;
+  left: 32px;
+}
+#promotion .list-one .secondLine{
+  letter-spacing: -0.007em;
+}
+.promotion-list-two .firstLine{
+  letter-spacing: -0.005em;
+  left: 31px;
+}
+#promotion .list-one .firstLine{
+  left: 32px;
 }
 
-main #promotion .firstLine {
-  position: absolute;
-  bottom: 8%;
-  left: 5%;
-  color: white;
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 32px;
-}
+
 
 #events {
   margin-top: 2.5px;
 }
 
-main #events p {
+#events p{
   position: absolute;
-  bottom: 2%;
-  left: 5%;
+  bottom: 0.17em;
+  left: 0.9em;
   color: white;
   font-weight: 600;
   font-size: 34px;
   line-height: 32px;
+  letter-spacing: 0.00005em;
 }
+
+
 #events button {
   margin-top: 3px;
   border-radius: 17px;
@@ -397,20 +544,28 @@ main #events p {
 
 main #institution p {
   position: absolute;
-  bottom: 2%;
-  left: 5%;
+  bottom: 0.19em;
+  left: 33px;
+  letter-spacing: 0em;
   color: white;
   font-weight: 600;
   font-size: 34px;
   line-height: 32px;
 }
+#institution .list-one p{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  bottom: 4.6px;
+  left: 32px;
+  letter-spacing:0.9px;
+  font-feature-settings: "case" on;
+}
 
 #institution {
   margin-top: 30px;
 }
-#popular {
-  margin-top: 2px;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -419,7 +574,7 @@ main #institution p {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -433,6 +588,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.footer-row-one{
+  padding-top: 0.5px;
+}
 footer .call {
   padding: 0;
   margin: 0;
@@ -444,12 +602,15 @@ footer .container {
   padding-bottom: 32px;
 }
 footer .number {
-  color: #f4f4f4;
-  text-align: start;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
+  color: #f4f4f4;
+  text-align: start;
+
+  margin-bottom: 2px;
+  margin-top: -3px;
 }
 footer .time {
   color: #a6a6a6;
@@ -464,7 +625,7 @@ footer .icon svg {
   background-color: #393939;
   transition: color 0.2s ease;
 }
-footer .icon svg:hover {
+.footer-row-one .icon svg:hover {
   color: #ffffff;
 }
 .store-icon a {
@@ -485,9 +646,11 @@ footer .logo {
   filter: invert(100%);
   display: flex;
   align-self: center;
+  margin-top:-2px;
 }
-header nav :hover {
-  color: #f4f4f4;
+header nav :hover,
+header .call :hover {
+  color: #1C1C1C;
 }
 
 footer nav a {
@@ -519,13 +682,16 @@ footer nav :hover {
   padding: 4px 8px;
   border-radius: 4px;
 }
-hr {
-  border: none;
-  border-top: 1px solid #393939;
+hr{
+  width:1312px; 
+  height:1px;
+  border-color: #393939;
+  margin-bottom: -17px;
 }
 
 #last-line {
   text-align: center;
+  padding-top: 3px;
 }
 #last-line a {
   color: #a6a6a6;
@@ -534,6 +700,9 @@ hr {
 #last-line a:hover {
   color: white;
 }
+#preax{
+  text-underline-offset: 3px; /* Adjust this value as needed */
+}
 .text a {
   color: #a6a6a6;
 }
@@ -541,34 +710,26 @@ hr {
   color: white;
 }
 
-footer .icon a {
-  margin-left: 4px;
+.footer-row-one .icon a{
+  margin-left: 3.5px;
 }
-footer .number {
-  margin-bottom: 2px;
-  margin-top: -1px;
+
+#text-align{
+  letter-spacing:0.05em;
 }
-footer .logo {
-  margin-right: 133px;
-}
-footer nav {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-footer nav a {
-  margin-left: 10px;
-}
-#playstore {
-  margin-left: 4px;
-}
+
 .footer-row-three {
-  margin-top: -10px;
-  margin-bottom: -18px;
+  margin-top: -13px;
+  margin-bottom: -20px;
 }
-hr {
-  margin-bottom: -17px;
+.footer-row-three p{
+  margin-right: 4px;
 }
+.footer-row-three .icon svg{
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
 #new-items {
   margin-top: -1px;
 }
@@ -591,11 +752,20 @@ hr {
   justify-content: center;
   line-height: 0;
 }
-header .icon {
-  display: flex;
-}
+
 
 #new-items a,
 #popular a {
   text-decoration: none;
 }
+
+#new-items button,
+#popular button{
+font-family: Inter;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+border-radius: 14px;
+}
+ 
