@@ -33,11 +33,7 @@ main #menu,
   box-sizing: border-box;
   padding: 0 64px;
 }
-#promotion img,
-#events img,
-#institution img{
-  padding-bottom: 0.5px;
-}
+
 
 #popular .col-three p{
   letter-spacing: 0.004em;
@@ -66,14 +62,8 @@ main ul {
   justify-content: space-between;
 }
 
-#menu img,
 .cards-img {
-  height: 304px;
-  width: fit-content;
-}
-
-.cards-img {
-  margin-bottom: -7px;
+  margin-bottom: -3px;
 }
 
 main a {
@@ -88,7 +78,7 @@ main #menu a::before,
 #institution a::before {
   content: "";
   position: absolute;
-  bottom: 1%;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 50%;
@@ -128,12 +118,6 @@ footer{
 .footer-row-two{
   margin-top: -2.5px;
 }
-/* .store{
-  margin-top:2.5px;
-}
-#apple{
-  margin-right: 4px;
-} */
 .footer-row-two .store-icon svg{
   margin-top:2.5px;
   margin-left : 3.8px;
@@ -141,7 +125,7 @@ footer{
 
 main #menu p {
   position: absolute;
-  bottom: -4.5px;
+  bottom: -8.5px;
   left: 16px;
   letter-spacing:0.5px;
   color: white;
@@ -243,11 +227,6 @@ body {
   font-family: Inter, "sans-serif";
 }
 
-main img,
-li {
-  width: 100%;
-  border-radius: 14px;
-}
 
 #banner {
   background-color: black;
@@ -339,10 +318,6 @@ header button:hover,
   background-color: #E8E8E8;
   color: #393939;
 }
-#promotion img,
-#events img{ 
-  object-fit: cover;
-}
 
 li h3 {
   color: #1c1c1c;
@@ -402,18 +377,6 @@ li p {
 
 .list-one {
   margin-right: 32px;
-}
-
-#promotion img,
-#events img,
-#institution img {
-  width: 640px;
-  height: 360px;
-}
-#promotion ul,
-#events ul,
-#institution ul {
-  height: 360px;
 }
 
 /* Shared base styles */
@@ -501,9 +464,9 @@ li p {
 }
 
 #promotion .firstLine,
-#promotion .secondLine {
+#promotion .secondLine{
   position: absolute;
-  bottom: 32px;
+  bottom: 27px;
   color: white;
   font-weight: 600;
   font-size: 34px;
@@ -511,7 +474,7 @@ li p {
   letter-spacing: -0.0025em;
 }
 #promotion .secondLine {
-  bottom: -8.5px;
+  bottom: -13px;
   left: 32px;
 }
 #promotion .list-one .secondLine{
@@ -533,7 +496,7 @@ li p {
 
 #events p{
   position: absolute;
-  bottom: 0.17em;
+  bottom: 0.06em;
   left: 0.9em;
   color: white;
   font-weight: 600;
@@ -554,8 +517,8 @@ li p {
 
 main #institution p {
   position: absolute;
-  bottom: 0.19em;
-  left: 33px;
+  bottom: 0.04em;
+  left: 32.5px;
   letter-spacing: 0em;
   color: white;
   font-weight: 600;
@@ -566,7 +529,7 @@ main #institution p {
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
-  bottom: 4.6px;
+  bottom: 0;
   left: 32px;
   letter-spacing:0.9px;
   font-feature-settings: "case" on;
@@ -574,6 +537,7 @@ main #institution p {
 
 #institution {
   margin-top: 30px;
+  margin-bottom: 1px;
 }
 
 
@@ -740,9 +704,6 @@ hr{
   margin-left: 4px;
 }
 
-#new-items {
-  margin-top: -1px;
-}
 #popular {
   margin-top: 3px;
 }
@@ -779,3 +740,87 @@ text-align: center;
 border-radius: 14px;
 }
  
+#pizza, .soup, #hot-dishes, #salad,
+.cards-img{
+  display: block;
+  width: 304px;
+  height: 304px;
+  border-radius: 14px;
+  background-size: cover;
+}
+#pizza{
+  background-image: url("./images/pizza.webp");
+}
+
+.soup{
+  background-image: url("./images/soup.webp");
+}
+
+#hot-dishes{
+  background-image: url("./images/hot-dishes.webp");
+}
+
+#salad{
+  background-image: url("./images/salad.webp");
+}
+
+#chinese-egg-soup{
+  background-image: url("./images/new-items/chinese-egg-soup.webp");
+}
+
+#paellea{
+  background-image: url("./images/new-items/paellea.webp");
+}
+
+#beef-burgienon{
+  background-image: url("./images/new-items/beef-burgienon.webp");
+}
+
+#broken-cucumbers{
+  background-image: url("./images/new-items/broken-cucumbers.webp");
+}
+
+
+#pepperoni{
+  background-image: url("./images/new-items/pepperoni.webp");
+}
+
+#pear-gorgonzola{
+  background-image: url("./images/new-items/pear-gorgonzola.webp");
+}
+
+#tom-yum-with-seafood{
+  background-image: url("./images/new-items/tom-yum-with-seafood.webp");
+}
+
+#menu ul{
+  margin-bottom: 3px;
+}
+
+.promote-event-institute{
+  display: block;
+  width: 640px;
+  height: 360px;
+  border-radius: 14px;
+  background-size:cover;
+  background-position: center;
+}
+
+#promotion-1{
+  background-image: url("./images/promotion/promotion-1.webp");
+}
+#promotion-2{
+  background-image: url("./images/promotion/promotion-2.webp");
+}
+#events_01{
+  background-image: url("./images/promotion/events_01.webp");
+}
+#events_02{
+  background-image: url("./images/promotion/events_02.webp");
+}
+#institution_01{
+  background-image: url("./images/promotion/institution_01.webp");
+}
+#institution_02{
+  background-image: url("./images/promotion/institution_02.webp");
+}
