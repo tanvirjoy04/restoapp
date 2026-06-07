@@ -199,7 +199,16 @@ footer nav{
   margin-right: -1.5px;
   font-feature-settings: "case" on; 
 }
+footer .number {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.7px;
+  color: #f4f4f4;
+  text-align: start;
 
+  margin-bottom: 2px;
+  margin-top: -3px;
+}
 .time {
   display: block;
   color: #555555;
@@ -209,6 +218,12 @@ footer nav{
   text-decoration: none;
   margin-right: -2px;
   margin-top: -0.5px;
+}
+footer .time {
+  color: #a6a6a6;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 header nav a,
@@ -575,23 +590,17 @@ footer .container {
   padding-top: 35px;
   padding-bottom: 32px;
 }
-footer .number {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.7px;
-  color: #f4f4f4;
-  text-align: start;
+header nav :hover,
+header .number :hover {
+  color: #1C1C1C;
+  transition: color 0.2s ease;
+}
+footer .number :hover{
+  color:#a6a6a6;
+  transition: color 0.2s ease;
+}
 
-  margin-bottom: 2px;
-  margin-top: -3px;
-}
-footer .time {
-  color: #a6a6a6;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-}
+
 footer .icon svg {
   color: #a6a6a6;
   padding: 8px;
@@ -622,10 +631,7 @@ footer .logo {
   align-self: center;
   margin-top:-2px;
 }
-header nav :hover,
-header .call :hover {
-  color: #1C1C1C;
-}
+
 
 footer nav a {
   color: #f4f4f4;
