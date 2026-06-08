@@ -197,7 +197,8 @@ footer nav{
   margin-top: 20.5px;
   letter-spacing: 0.015rem;
   margin-right: -1.5px;
-  font-feature-settings: "case" on; 
+  font-feature-settings: "case" on;
+  transition: 0.2s ease; 
 }
 footer .number {
   font-size: 24px;
@@ -208,6 +209,7 @@ footer .number {
 
   margin-bottom: 2px;
   margin-top: -3px;
+  transition: 0.2s ease;
 }
 .time {
   display: block;
@@ -233,7 +235,7 @@ footer nav a {
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 body {
@@ -322,6 +324,7 @@ button {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  transition: 0.2s ease;
 }
 #banner button:hover,
 header button:hover,
@@ -467,6 +470,7 @@ main {
   border: 2px solid #1c1c1c;
   margin-top: 8px;
   padding-top: 15px;
+  transition: 0.2s ease;
 }
 
 #promotion p {
@@ -523,6 +527,7 @@ main {
   margin-top: 3px;
   border-radius: 17px;
   padding-bottom: 13px;
+  transition: 0.2s ease;
 }
 #institution ul {
   margin-top: 1px;
@@ -589,13 +594,11 @@ footer .container {
   padding-bottom: 32px;
 }
 header nav :hover,
-header .number :hover {
+header .number:hover {
   color: #1C1C1C;
-  transition: color 0.2s ease;
 }
-footer .number :hover{
+footer .number:hover{
   color:#a6a6a6;
-  transition: color 0.2s ease;
 }
 
 
@@ -604,7 +607,7 @@ footer .icon svg {
   padding: 8px;
   border-radius: 8px;
   background-color: #393939;
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
 .footer-row-one .icon svg:hover {
   color: #ffffff;
@@ -615,7 +618,7 @@ footer .icon svg {
 
 .store-icon svg {
   --triangle-opacity: 0.5;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .store-icon svg:hover {
@@ -631,9 +634,9 @@ footer .logo {
 }
 
 
-footer nav a {
+footer nav a{
   color: #f4f4f4;
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
 footer nav :hover {
   color: #a6a6a6;
@@ -653,7 +656,7 @@ footer nav :hover {
   align-items: center;
 }
 .text a {
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
   text-decoration: none;
 }
 .payment-icon svg {
@@ -674,7 +677,7 @@ hr{
 }
 #last-line a {
   color: #a6a6a6;
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
 #last-line a:hover {
   color: white;
@@ -684,6 +687,7 @@ hr{
 }
 .text a {
   color: #a6a6a6;
+  transition: 0.2s ease;
 }
 .text a:hover {
   color: white;
@@ -728,6 +732,7 @@ hr{
   align-items: center;
   justify-content: center;
   line-height: 0;
+  transition: 0.2s ease;
 }
 
 
@@ -744,6 +749,7 @@ font-size: 18px;
 line-height: 24px;
 text-align: center;
 border-radius: 14px;
+transition: 0.2s ease;
 }
  
 #pizza, .soup, #hot-dishes, #salad,
