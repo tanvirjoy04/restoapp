@@ -106,10 +106,6 @@ main #menu a::before,
   padding-top: 1px;
   letter-spacing: 0.04em;
 }
-footer{
-  margin-top: -1px;
-  padding-top: 0px;
-}
 
 .footer-row-one .time{
   padding-top: 2px;
@@ -145,10 +141,13 @@ main #menu p {
   margin-right: 32px;
 }
 
-header img {
+header .logo svg {
+  color: #1C1C1C;
   padding-top: 1.788rem;
   padding-bottom: 1.809rem;
+  transition: 0.2s ease;
 }
+
 
 header nav ul,
 footer nav ul{
@@ -241,7 +240,7 @@ footer nav a {
 body {
   margin: 0;
   min-width: 1440px;
-  font-family: Inter, "sans-serif";
+  font-family:'Inter', sans-serif;
 }
 
 
@@ -260,13 +259,9 @@ body {
   margin-right: -5px;
 }
 
-#banner.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 #banner svg {
   margin-left: 18px;
+  transition: 0.2s ease;
 }
 
 .icon {
@@ -284,23 +279,25 @@ header .icon {
   border: 2px solid;
   border-radius: 16px;
   margin-right: 4px;
+  transition: 0.2s ease;
 }
+
 #basket svg {
   padding: 0;
   padding-top: 5px;
   padding-left: 12px;
   margin-bottom: 4px;
 }
-
-header .logo {
-  padding-top: 0.03125rem;
+#basket svg :hover{
+  --basket-bg:white;
+  --basket-fg: #1c1c1c;
 }
 
 #new-items p,
 #popular p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* Limits to 2 lines, adds '...' */
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 ul {
@@ -326,8 +323,9 @@ button {
   text-align: center;
   transition: 0.2s ease;
 }
+
+
 #banner button:hover,
-header button:hover,
 #events button:hover{
   filter: invert(100%);
 }
@@ -358,9 +356,8 @@ li p {
 
   margin-top: -13px;
 }
-#new-items-para-three{
+#new-items .col-three p{
   letter-spacing: 0.005em;
-
 }
 
 main #menu,
@@ -395,7 +392,6 @@ main {
   margin-right: 32px;
 }
 
-/* Shared base styles */
 .discount,
 .event-date,
 .time-left,
@@ -436,8 +432,6 @@ main {
   left: 124px;
 }
 
-
-/* Group C: Top-Right item */
 .soon {
   top: 32px;
   right: 5%;
@@ -468,8 +462,10 @@ main {
   color: #1c1c1c;
   background-color: #FFFFFF;
   border: 2px solid #1c1c1c;
-  margin-top: 8px;
   padding-top: 15px;
+  margin-top: 3px;
+  border-radius: 17px;
+  padding-bottom: 13px;
   transition: 0.2s ease;
 }
 
@@ -522,13 +518,6 @@ main {
   letter-spacing: 0.00005em;
 }
 
-
-#events button {
-  margin-top: 3px;
-  border-radius: 17px;
-  padding-bottom: 13px;
-  transition: 0.2s ease;
-}
 #institution ul {
   margin-top: 1px;
 }
@@ -573,6 +562,8 @@ main #institution p {
 footer {
   background-color: #1c1c1c;
   color: white;
+  margin-top: -1px;
+  padding-top: 0px;
 }
 .footer-row-one,
 .footer-row-two,
@@ -591,7 +582,7 @@ footer .container {
   flex-direction: column;
   gap: 32px;
   padding-top: 35px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
 }
 header nav :hover,
 header .number:hover {
@@ -601,6 +592,13 @@ footer .number:hover{
   color:#a6a6a6;
 }
 
+footer nav a{
+  color: #f4f4f4;
+  transition: 0.2s ease;
+}
+footer nav :hover {
+  color: #a6a6a6;
+}
 
 footer .icon svg {
   color: #a6a6a6;
@@ -626,21 +624,20 @@ footer .icon svg {
   --triangle-opacity: 1;
 }
 
+header svg:hover{
+  color:#FFFFFF;
+}
 footer .logo {
-  filter: invert(100%);
+  color:#FFFFFF;
   display: flex;
   align-self: center;
   margin-top:-2px;
-}
-
-
-footer nav a{
-  color: #f4f4f4;
   transition: 0.2s ease;
 }
-footer nav :hover {
-  color: #a6a6a6;
+footer .logo:hover{
+  color:#a6a6a6;
 }
+
 .footer-row-three,
 #last-line {
   color: #a6a6a6;
@@ -659,10 +656,7 @@ footer nav :hover {
   transition: 0.2s ease;
   text-decoration: none;
 }
-.payment-icon svg {
-  padding: 4px 8px;
-  border-radius: 4px;
-}
+
 hr{
   width:1312px; 
   height:0;
@@ -682,8 +676,8 @@ hr{
 #last-line a:hover {
   color: white;
 }
-#preax{
-  text-underline-offset: 3px; /* Adjust this value as needed */
+#internship{
+  text-underline-offset: 3px;
 }
 .text a {
   color: #a6a6a6;
@@ -720,14 +714,11 @@ hr{
 #banner button,
 .icon #user,
 .icon #basket {
-  /* Removes default button styling */
   background: none;
   border: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
-
-  /* Shapes the button exactly to the image size */
   display: flex;
   align-items: center;
   justify-content: center;

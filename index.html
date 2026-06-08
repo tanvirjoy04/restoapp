@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resto App</title>
-    <base href="./index.html">
     <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
     <div id="banner">
       <span>Бесплатная доставка от 1 000 ₽</span>
-      <button id="cross">
+      <button id="cross" aria-label="кнопка отмены">
         <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use href="./images/icons/sprite.svg#cross"></use></svg>
       </button>
@@ -19,7 +19,9 @@
     <header>
       <div class="container">
         <a href="./index.html" class="logo">
-          <img src="./images/restoapp1_logo.svg" width="137" height="22" alt="Логотип приложения «Ресто»">
+          <svg width="137" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/icons/sprite.svg#logo"></use>
+          </svg>
         </a>
 
         <nav>
@@ -40,11 +42,11 @@
         </address>
 
         <div class="icon">
-          <button id="user">
+          <button id="user" aria-label="кнопка пользователя">
             <svg width="16" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="./images/icons/sprite.svg#user"></use></svg>
           </button>
-          <button id="basket">
+          <button id="basket" aria-label="кнопка корзины">
             <svg width="56" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="./images/icons/sprite.svg#basket"></use></svg>
           </button>
@@ -116,7 +118,7 @@
             <a href="./index.html">
               <hgroup>
                 <h3>Биф Бургеньон</h3>
-                <p id="new-items-para-three">Блюдо французской кухни —<br>
+                <p>Блюдо французской кухни —<br>
                   тушёные кусочки говядины с картофелем
                   и болгарским перцем</p>
               </hgroup>
@@ -282,7 +284,7 @@
             <a href="tel:+0(123)45678-90" class="number">+0 (123) 456 78-90</a>
             <a href="./index.html" class="time">Прием заказов с 
               <time datetime="10:00">10:00</time> до 
-              <time datetime="10:00">22:40</time></a>
+              <time datetime="22:40">22:40</time></a>
           </address>
 
           <div class="icon">
@@ -302,7 +304,9 @@
 
         <div class="footer-row-two">
           <a href="./index.html" class="logo">
-            <img src="./images/restoapp1_logo.svg" width="137" height="22" alt="Логотип приложения «Ресто»">
+            <svg width="137" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/icons/sprite.svg#logo"></use>
+            </svg>
           </a>
 
           <nav>
@@ -345,7 +349,7 @@
           </div>
         <hr>
         <p id="last-line">Проект выполнен в рамках стажировки
-          <a id="preax" href="https://preax.ru" target="_blank" rel="noreferrer noopener">PREAX</a>
+          <a id="internship" href="https://preax.ru" target="_blank" rel="noreferrer noopener">PREAX</a>
         </p>
       </div>
     </footer>
