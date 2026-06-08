@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div id="banner">
+    <div id="body-div-banner">
       <span>Бесплатная доставка от 1 000 ₽</span>
       <button id="cross" aria-label="кнопка отмены">
         <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
             <time datetime="22:40">22:40</time></a>
         </address>
 
-        <div class="icon">
+        <div class="header-div-profile">
           <button id="user" aria-label="кнопка пользователя">
             <svg width="16" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="./images/icons/sprite.svg#user"></use></svg>
@@ -56,7 +56,7 @@
 
     <main>
       <h1 class="visually-hidden">Приложение Resto для доставки еды</h1>
-      <section id="menu">
+      <section class="menu">
         <h2 class="title">Меню</h2>
         <ul>
           <li>
@@ -64,13 +64,13 @@
               <p>Пицца</p></a>
           </li>
 
-          <li>
-            <a href="./index.html" class="col-two soup" aria-label="Супы">
+          <li class="menu-item-2">
+            <a href="./index.html" class="soup" aria-label="Супы">
               <p>Супы</p></a>
           </li>
 
-          <li>
-            <a href="./index.html" class="col-three" id="hot-dishes" aria-label="Горячие блюда">
+          <li class="menu-item-3">
+            <a href="./index.html" id="hot-dishes" aria-label="Горячие блюда">
               <p>Горячие блюда</p></a>
           </li>
 
@@ -81,154 +81,136 @@
         </ul>
       </section>
 
-      <section id="new-items">
+      <section class="new-items">
         <h2 class="title">Новинки</h2>
         <ul>
-          <li>
+          <li class="new-items-item-1">
             <a href="./index.html" class="cards-img" id="chinese-egg-soup" href="./index.html" aria-label="Китайский яичный суп">
               <img class="badge" src="./images/badge/vegetarian.svg" alt="Эмблема">
             </a>
-            
             <a href="./index.html">
-              <hgroup>
-                <h3 id="new-items-header-first">Китайский яичный суп</h3>
-                <p>Традиционный китайский суп с яйцом и томатами черри</p>
-              </hgroup>
+              <h3>Китайский яичный суп</h3>
+              <p>Традиционный китайский суп с яйцом и томатами черри</p>
             </a>
-
             <button>350 ₽</button>
           </li>
 
-          <li class="col-two">
+          <li class="new-items-item-2">
             <a href="./index.html" class="cards-img" id="paellea" aria-label="Паэлья">
               <img class="badge" src="./images/badge/vegetarian.svg" alt="Эмблема">
             </a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Паэлья</h3>
-                <p>Традиционное испанское блюдо — рис, колбаски чоризо, куриное
-                  бедро, кальмар, кукуруза, горошек, специи</p>
-              </hgroup>
+              <h3>Паэлья</h3>
+              <p>Традиционное испанское блюдо — рис, колбаски чоризо, куриное
+                бедро, кальмар, кукуруза, горошек, специи</p>
             </a>
             <button>660 ₽</button>
           </li>
 
-          <li class="col-three">
+          <li class="new-items-item-3">
             <a href="./index.html" class="cards-img" id="beef-burgienon" aria-label="Биф Бургеньон"></a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Биф Бургеньон</h3>
-                <p>Блюдо французской кухни —<br>
-                  тушёные кусочки говядины с картофелем
-                  и болгарским перцем</p>
-              </hgroup>
+              <h3>Биф Бургеньон</h3>
+              <p>Блюдо французской кухни —<br>
+                тушёные кусочки говядины с картофелем
+                и болгарским перцем</p>
             </a>
             <button>630 ₽</button>
           </li>
 
-          <li>
+          <li class="new-items-item-4">
             <a href="./index.html" class="cards-img" id="broken-cucumbers" aria-label="Битые огурцы">
               <img class="badge" src="./images/badge/vegetarian.svg" alt="Эмблема">
             </a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Битые огурцы</h3>
-                <p>Салат из свежих битых огурцов с уйгурским соусом, кешью
-                  и кунжутом</p>
-              </hgroup>
+              <h3>Битые огурцы</h3>
+              <p>Салат из свежих битых огурцов с уйгурским соусом, кешью
+                и кунжутом</p>
             </a>
             <button>320 ₽</button>
           </li>
         </ul>
       </section>
 
-      <section id="popular">
+      <section class="popular">
         <h2 class="title">Популярное</h2>
         <ul>
-          <li>
+          <li class="popular-item-1">
             <a href="./index.html" class="cards-img" id="pepperoni" aria-label="Пепперони"></a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Пепперони</h3>
-                <p>Просто и вкусно - томатная основа маринара, колбаски пепперони и
-                  сыр моцарелла</p>
-              </hgroup>
+              <h3>Пепперони</h3>
+              <p>Просто и вкусно - томатная основа маринара, колбаски пепперони и
+                сыр моцарелла</p>
             </a>
             <button>660 ₽</button>
           </li>
 
-          <li class="col-two">
+          <li class="popular-item-2">
             <a href="./index.html" class="cards-img" id="pear-gorgonzola" aria-label="Груша Горгонзола">
               <img class="badge" src="./images/badge/vegetarian.svg" alt="Эмблема">
             </a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Груша Горгонзола</h3>
-                <p>Нежная пицца на основе сливочного соуса с сыром горгондзола,
-                  грушей, медом и кедровыми орехами</p>
-              </hgroup>
+              <h3>Груша Горгонзола</h3>
+              <p>Нежная пицца на основе сливочного соуса с сыром горгондзола,
+                грушей, медом и кедровыми орехами</p>
             </a>
             <button>780 ₽</button>
           </li>
 
-          <li class="col-three">
+          <li class="popular-item-3">
             <a href="./index.html" class="cards-img soup" aria-label="Фо Бо"></a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Фо Бо</h3>
-                <p>Вьетнамский суп с рисовой лапшой, в котором используется
-                  говядина, свежая зелень и ростки сои. Подают с добавками, такими
-                  как мята, долька лайма, острый соус шрирача, азиатский уксус
-                  и лаоганма</p>
-              </hgroup>
+              <h3>Фо Бо</h3>
+              <p>Вьетнамский суп с рисовой лапшой, в котором используется
+                говядина, свежая зелень и ростки сои. Подают с добавками, такими
+                как мята, долька лайма, острый соус шрирача, азиатский уксус
+                и лаоганма</p>
             </a>
             <button>490 ₽</button>
           </li>
 
-          <li class="popular-list-four">
+          <li class="popular-item-4">
             <a href="./index.html" class="cards-img" id="tom-yum-with-seafood" aria-label="Том Ям с морепродуктами">
               <img class="badge-front" src="./images/badge/sharp.svg" alt="Эмблема">
               <img class="badge" src="./images/badge/seafood.svg" alt="Эмблема">
             </a>
             <a href="./index.html">
-              <hgroup>
-                <h3>Том Ям с морепродуктами</h3>
-                <p>Традиционный тайский суп, на основе кокосового молока и сливок,
-                  с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов,
-                  помидоров черри и свежей зелени. Подается с паровым тайским
-                  рисом</p>
-              </hgroup>
+              <h3>Том Ям с морепродуктами</h3>
+              <p>Традиционный тайский суп, на основе кокосового молока и сливок,
+                с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов,
+                помидоров черри и свежей зелени. Подается с паровым тайским
+                рисом</p>
             </a>
             <button>590 ₽</button>
           </li>
         </ul>
       </section>
 
-      <section id="promotion">
+      <section class="promotion">
         <h2 class="title">Акции</h2>
         <ul>
-          <li class="list-one">
+          <li class="promotion-item-1">
             <a href="./index.html" id="promotion-1" class="promote-event-institute" aria-label="Акция 1">
               <span class="discount">Скидка 10%</span>
-              <p class="firstLine">Статус «Platina»</p>
-              <p class="secondLine">привилегированным клиентам</p>
+              <p class="promotion-item-1-para-1">Статус «Platina»</p>
+              <p class="promotion-item-1-para-2">привилегированным клиентам</p>
             </a>
           </li>
 
-          <li class="promotion-list-two">
+          <li class="promotion-item-2">
             <a href="./index.html" id="promotion-2" class="promote-event-institute" aria-label="Акция 2">
               <span class="discount">Скидка 5%</span>
-              <p class="firstLine">Скидка на все покупки</p>
-              <p class="secondLine">при регистрации</p>
+              <p class="promotion-item-2-para-1">Скидка на все покупки</p>
+              <p class="promotion-item-2-para-2">при регистрации</p>
             </a>
           </li>
         </ul>
       </section>
 
-      <section id="events">
+      <section class="events">
         <h2 class="title">События</h2>
         <ul>
-          <li class="list-one">
+          <li class="events-item-1">
             <a href="./index.html" id="events_01" class="promote-event-institute" aria-label="События 1">
               <span class="event-date">27 января</span>
               <span class="event-time">В 
@@ -238,7 +220,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="events-item-2">
             <a href="./index.html" id="events_02" class="promote-event-institute" aria-label="События 2">
               <span class="event-date">21 января</span>
               <span class="event-discount">Скидка 20%</span>
@@ -250,21 +232,21 @@
         <button>Все события</button>
       </section>
 
-      <section id="institution">
+      <section class="institution">
         <h2 class="title">Наши заведения</h2>
         <ul>
-          <li class="list-one">
+          <li class="institution-item-1">
             <a href="./index.html" id="institution_01" class="promote-event-institute" aria-label="Наши заведения 1">
               <span class="time-left">Открыт еще 1 ч 20 мин</span>
               <span class="open-hours">с 
                 <time datetime="10:00">10:00</time> до 
                 <time datetime="23:00">23:00</time></span>
               <span class="soon">Открыт</span>
-              <p>Фудкорт — Кафе «Га<span id="text-align">строцех»</span></p>
+              <p>Фудкорт — Кафе «Гастроцех»</p>
             </a>
           </li>
 
-          <li>
+          <li class="institution-item-2">
             <a href="./index.html" id="institution_02" class="promote-event-institute" aria-label="Наши заведения 2">
               <span class="time-left">Открыт еще 1 ч 20 мин</span>
               <span class="open-hours">с 
@@ -287,7 +269,7 @@
               <time datetime="22:40">22:40</time></a>
           </address>
 
-          <div class="icon">
+          <div class="footer-div-social">
             <a href="./index.html" target="_blank" rel="noreferrer noopener">
               <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use href="./images/icons/sprite.svg#telegram"></use></svg></a>
@@ -319,7 +301,7 @@
             </ul>
           </nav>
 
-          <div class="store-icon">
+          <div class="footer-div-store">
             <a href="./index.html" target="_blank" rel="noreferrer noopener">
               <svg width="138" height="40">
                 <use href="./images/icons/sprite.svg#applestore"></use></svg></a>
@@ -336,7 +318,7 @@
             <a href="./index.html" id="middle">Политика обработки персональных данных</a>
             <a href="./index.html">Согласие на обработку персональных данных</a>
           </div>
-          <div class="icon">
+          <div class="footer-div-payment">
             <svg width="32" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="./images/icons/sprite.svg#visa"></use></svg>
 

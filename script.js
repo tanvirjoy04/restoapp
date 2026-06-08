@@ -1,5 +1,5 @@
 const crossEl = document.getElementById("cross");
-const bannerEl = document.getElementById("banner");
+const bannerEl = document.getElementById("body-div-banner");
 
 crossEl.addEventListener("click", function () {
   bannerEl.classList.add("hidden");
