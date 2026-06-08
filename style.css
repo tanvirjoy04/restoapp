@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Inter";
   font-display: swap;
-  src: url("./fonts/Inter-VariableFont_opsz,wght.ttf")
-    format("truetype-variations");
+  src: url("./fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2"),
+       url("./fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype-variations");
 }
 
 header {
@@ -352,6 +352,8 @@ li p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.005em;
+
+  margin-top: -13px;
 }
 #new-items-para-three{
   letter-spacing: 0.005em;
@@ -374,20 +376,16 @@ main {
 .badge {
   position: absolute;
   width: 12%;
-  top: 1.9%;
+  top: 8px;
   right: 2.7%;
   border-radius: 8px;
 }
 .badge-front {
   position: absolute;
   width: 12%;
-  top: 1.8%;
+  top: 8px;
   right: 17%;
   border-radius: 8px;
-}
-
-li p {
-  margin-top: -13px;
 }
 
 .list-one {
@@ -664,8 +662,9 @@ footer nav :hover {
 }
 hr{
   width:1312px; 
-  height:1px;
-  border-color: #393939;
+  height:0;
+  border: none;
+  border-top:1px solid #393939;
   margin-bottom: -17px;
 }
 
@@ -700,13 +699,14 @@ hr{
 
 .footer-row-three {
   margin-top: -13px;
-  margin-bottom: -20px;
+  margin-bottom: -17.5px;
 }
 .footer-row-three p{
   margin-right: 4px;
+  margin-top: 13.3px;
 }
 .footer-row-three .icon svg{
-  margin-top: 4px;
+  margin-top: 4.5px;
   margin-left: 4px;
 }
 
